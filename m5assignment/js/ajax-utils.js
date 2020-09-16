@@ -1,3 +1,4 @@
+  
 (function (global) {
 
 // Set up a namespace for our utility
@@ -31,7 +32,7 @@ ajaxUtils.sendGetRequest =
                        isJsonResponse); 
       };
     request.open("GET", requestUrl, true);
-    
+    request.send(null); // for POST only
   };
 
 
